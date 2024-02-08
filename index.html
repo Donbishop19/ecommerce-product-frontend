@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+
+  
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar -->
+    <nav class="container nav_container">
+      <div class="nav_left">
+        <img class="hidden menu" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/icon-menu_mcwanu.svg" alt="menu">
+        <img class="nav_logo" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148296/logo_vcjuik.svg" alt="logo">
+        <div class="overlay"></div>
+        <ul class="nav_links"> 
+          <img class="hidden close_btn" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/icon-close_ag1zv7.svg" alt="clos">
+          <li class="nav_link"><a href="#">Collections</a></li>
+          <li class="nav_link"><a href="#">Men</a></li>
+          <li class="nav_link"><a href="#">Women</a></li>
+          <li class="nav_link"><a href="#">About</a></li>
+          <li class="nav_link"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav_right">
+        <!-- cart -->
+        <div class="cart_container">
+          <button class="cart_btn">
+            <span class="indicator"></span>
+            <img class="cart" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/icon-cart_qrsjz1.svg" alt="cart">
+          </button>
+          <div class="cart_wrp invisible">
+            <p class="cart_heading">Cart</p>
+            <div class="divider"></div>
+            <div class="cart_content empty">
+              <p>Your cart is empty</p>
+            </div>
+          </div>
+        </div>
+        <img class="avatar" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148295/image-avatar_szhheh.png" alt="avatar">
+      </div>
+    </nav>
+  </header>
+  <main class="container main">
+    <!-- thumnails -->
+    <section class="thumbnail">
+      <img class="main_thumbnail invisible_mob" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/image-product-1_zonfjt.jpg" alt="product">
+      <div class="mobile_thumb hidden">
+        <img class="thumb_mob" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/image-product-1_zonfjt.jpg" alt="product">
+        <button id="next"><img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148294/icon-next_dyzvja.svg" alt="next"></button>
+        <button id="previous"><img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148295/icon-previous_l9mar5.svg" alt="previous"></button>
+      </div>
+      <div>
+        <div class="preview">
+          <img class="selected" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/image-product-1_zonfjt.jpg" alt="product">
+          <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148295/image-product-2-thumbnail_zmoeqt.jpg" alt="product">
+          <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148296/image-product-3-thumbnail_xcnkkb.jpg" alt="product">
+          <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148296/image-product-4-thumbnail_a1gcaq.jpg" alt="product">
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+    <section class="content">
+      <p class="company">Sneaker Company</p>
+      <h2 class="title">Fall Limited Edition Sneakers</h2>
+      <p class="info">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="price">
+        <div class="new_price">
+          <p class="now">$125.00</p>
+          <span>50%</span>
+        </div>
+        <p class="old_price">$250.00</p>
+      </div>
+      <div class="bottons">
+        <div class="amount_btn">
+          <button id="minus">
+            <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/icon-minus_lxzl2p.svg" alt="minus">
+          </button>
+          <p class="amount">0</p>
+          <button id="plus">
+            <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148294/icon-plus_d1tyx0.svg" alt="plus">
+          </button>
+        </div>
+        <button class="add_btn">
+          <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/icon-cart_qrsjz1.svg" alt="">
+          Add to cart
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- lightbox -->
+  <div class="lightbox invisible hidden">
+    <div class="lightbox_container" >
+      <button class="close_lightbox"><img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/icon-close_ag1zv7.svg" alt="close"></button>
+      <img class="main_thumbnail invisible_mob" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/image-product-1-thumbnail_jxif0j.jpg" alt="product">
+      <div class="preview">
+        <img class="selected" src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148293/image-product-1-thumbnail_jxif0j.jpg" alt="">
+        <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148295/image-product-2-thumbnail_zmoeqt.jpg" alt="product">
+        <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148296/image-product-3-thumbnail_xcnkkb.jpg" alt="product">
+        <img src="https://res.cloudinary.com/dlavwkna7/image/upload/v1700148296/image-product-4-thumbnail_a1gcaq.jpg" alt="product">
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
